@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        #create_account {
+            margin-left: 835px;
+            font-size: 20px;
+        }
+
+        #login {
+            margin-left: 50px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>This is the main page</h1>
+<br>
+<br>
+<br>
+<a id="create_account" href="{% url 'registration' %}">Create account</a>
+<a id="login" href="{% url 'login' %}">Login</a>
+</body>
+</html>

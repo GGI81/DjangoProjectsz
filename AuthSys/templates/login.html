@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        button {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1>Login to your account</h1>
+<br>
+<br>
+<form method="post" action="{% url 'login' %}">
+    {{ form }}
+    {% csrf_token %}
+    <br>
+    <br>
+    <button>Login</button>
+</form>
+</body>
+</html>

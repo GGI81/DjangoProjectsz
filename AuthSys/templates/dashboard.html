@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome {{ object.full_name }}</h1>
+<br>
+<h3>Email: {{ object.email }}</h3>
+<br>
+<br>
+<br>
+<a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
